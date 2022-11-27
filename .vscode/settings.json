@@ -1,0 +1,7 @@
+{
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": false,
+    "diffEditor.codeLens": true,
+    "editor.minimap.side": "right",
+    "svn.ignoreMissingSvnWarning": true
+}

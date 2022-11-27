@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" data-name="Слой 1" viewBox="0 0 24 24" width="384" height="384">
+  <rect width="7.004" height="3" x="14.001" y="11" rx="1.5" fill="#1E1E00" />
+  <path d="M14.5,4H9A1,1,0,0,1,8,3V2A1,1,0,0,0,7,1H4A1,1,0,0,0,3,2V4A5,5,0,0,0,8,9h6a1,1,0,0,1,1,1v3h5V9.5A5.5,5.5,0,0,0,14.5,4Z" opacity=".35" fill="#1E1E00" />
+  <path d="M20,20.5a2.5,2.5,0,0,1-5,0,12.725,12.725,0,0,1,1.639-4,.982.982,0,0,1,1.722,0A12.725,12.725,0,0,1,20,20.5Z" opacity=".35" fill="#1E1E00" />
+  <rect width="3" height="7.005" x="10" y="2.996" rx="1.5" fill="#1E1E00" />
+</svg>
