@@ -45,7 +45,7 @@
     --bg-purply: #4d29db;
     --bg-redly: #f0295f;
     --bg-limly: #96f726;
-    --bg-greenly: #b0f95f;
+    --bg-greenly: #52C62C;
     --font-farsi-ircf: "IRCF";
     --cursor-link: pointer;
     --max-width: 100%;
@@ -812,7 +812,9 @@ i[class="fa fa-search bg-transparent font-size-4 hand mt-12"] {
 .ml-30 {
     margin-left: 30px;
 }
-
+.ml-50{
+  margin-left: 50px;
+}
 .mr-0 {
     margin-right: 0px;
 }
@@ -881,6 +883,9 @@ i[class="fa fa-search bg-transparent font-size-4 hand mt-12"] {
 }
 .mr-30 {
     margin-right: 30px;
+}
+.mr-50 {
+    margin-right: 50px;
 }
 
 .mb-0 {

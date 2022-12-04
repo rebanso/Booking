@@ -172,52 +172,83 @@
                         class="text-redly">❤</span> در ایران زیبا :)</p>
             </article>
             <article class="mid-width-fixed bg-white radius-5 shadow-xs mb-20 height-auto">
-                <form action="" method="post" enctype="multipart/form-data" class="mb-20 relative" id="user_profile_items_list_form">
-                    <p class="text-right ircf-font mr-20 mt-10 p-20 font-size-4 ircf-font-bold text-purply">.:: اطلاعات حساب کاربری ::.</p>
+                <form action="" method="post" enctype="multipart/form-data" class="mb-20 mt-15 relative" id="user_profile_items_list_form">
                     <section class="d-flex align-center m-auto text-right justify-around">
                         <p class="ircf-font ircf-font-bold font-size-0 text-dark">نام و نام خانوادگی خود را وارد کنید</p>
-                        <p class="ircf-font ircf-font-bold font-size-0 text-dark">جنسیت خود را مشخص کنید</p>
+                        <p class="ircf-font ircf-font-bold font-size-0 text-dark">جنسیت خود را وارد کنید</p>
                     </section>
-                    <section class="d-flex justify-around">
-                        <input type="text" class="border-3-transparent border-none outline-none bg-light sm-width-max p-10 radius-5 shadow-xs ircf-font font-size-1" placeholder="مثلا: زهرا میرزایی" />
-                        <input type="text" class="border-3-transparent border-none outline-none bg-light sm-width-max p-10 radius-5 shadow-xs ircf-font font-size-1" list="gender_gd8734h73" id="set_gender_gd8734h73" placeholder="جنسیت خود را مشخص کنید" />
-                        <datalist id="gender_gd8734h73">
-                            <option value="مذکر">مذکر</option>
-                            <option value="مونث">مونث</option>
-                        </datalist>
+                    <section class="d-flex justify-around relative">
+                        <input
+                        type="text"
+                        class="border-3-transparent border-none outline-none bg-light sm-width-max p-10 radius-5 ircf-font font-size-1"
+                        placeholder="مثال: مهسا امینی" />
+                        <input
+                        type="text"
+                        maxlength="4"
+                        minlength="4"
+                        class="border-3-transparent border-none outline-none bg-light sm-width-max p-10 radius-5 ircf-font font-size-1 text-right hand"
+                        id="set_gender_value"
+                        style="box-shadow: 0 0px 7px 5px inset var(--text-light)"
+                        placeholder="مثال: مونث" />
+                        <ul class="d-none shadow-xs border-3-transparent border-none outline-none bg-light sm-width-max p-10 radius-5 ircf-font font-size-1 text-right hand dashboard-gender-dropdown"
+                        id="get_gender_value">
+                          <li class="p-15 ircf-font box-hover-effect-1 hand radius-50 transition-0-5 d-flex justify-between align-items-center">
+                            مذکر
+                            <img src="../assets/contents/sgv_icon-pack-b487xbn238xc/male.svg" alt="" class="img-30 radius-50" />
+                          </li>
+                          <li class="p-15 ircf-font box-hover-effect-1 hand radius-50 transition-0-5 d-flex justify-between align-items-center">
+                            مونث
+                            <img src="../assets/contents/sgv_icon-pack-b487xbn238xc/female.svg" alt="" class="img-30 radius-50" />
+                          </li>
+                        </ul>
                     </section>
                     <div class="pad-15"></div>
-                    <section class="d-flex align-center m-auto text-center align-center justify-around">
-                        <p class="ircf-font ircf-font-bold font-size-0 text-dark">شماره موبایل خود را وارد کنید</p>
-                        <p class="ircf-font ircf-font-bold font-size-0 text-dark">در کدام کشور زندگی می کنید</p>
+                    <section class="d-flex align-center m-auto text-right justify-around">
+                        <p class="ircf-font ircf-font-bold font-size-0 text-dark">نام شهر خود را وارد کنید</p>
+                        <p class="ircf-font ircf-font-bold font-size-0 text-dark">جنسیت خود را مشخص کنید</p>
                     </section>
-                    <section class="d-flex justify-around">
-                        <input type="text" maxlength="11" minlength="11" pattern="^[0-9]+" inputmode="tel" class="border-3-transparent border-none outline-none bg-light sm-width-max p-10 radius-5 shadow-xs ircf-font font-size-1" placeholder="به عنوان مثال: 09012345678" />
-                        <input type="text" id="show_city_search_box_dh37g37" maxlength="50" class="border-3-transparent border-none outline-none bg-light sm-width-max p-10 radius-5 shadow-xs ircf-font font-size-1" placeholder="به عنوان مثال: رامسر" />
-                        <div id="search_and_find_city" class="d-none bg-redly border-none outline-none mid-width p-10 radius-5 shadow-xs ircf-font font-size-1">
-                            <form action="" method="" enctype="multipart/form-data" class="relative">
-                                <label for="findcity" class="ircf-font font-size-1 text-white ircf-font-bold d-block mt-20 mb-30">در کدام یک از شهر های
-                                    ایران زندگی می کنید؟</label>
-                                <input type="text" maxlength="30" placeholder="نام شهر خود را جستجو کنید" class="border-3-transparent border-none outline-none bg-light max-width-auto p-10 radius-50 shadow-xs ircf-font font-size-1" />
-                                <i class="fa fa-search absolute d-block font-size-2 p-10 radius-50 bg-redly text-white shadow-xs hand" style="margin-right: -45px; margin-top: 6.8px;"></i>
-                            </form>
-                            <p class="m-30-auto text-white mt-25"></p>                            
-                            <div class="d-flex justify-around flex-wrap" style="align-items: flex-start; flex-direction: row-reverse;">
-                                <i class="fa fa-close p-10 font-size-5 bg-redly absolute" id="close_search_and_find_city_h48h239"></i>
-                            </div>
-                        </div>
+                    <section class="d-flex justify-around relative">
+                        <input
+                        type="text"
+                        class="border-3-transparent border-none outline-none bg-light sm-width-max p-10 radius-5 ircf-font font-size-1"
+                        placeholder="مثال: سقز" id="set_city_value" />
+                        <input
+                        type="text"
+                        maxlength="4"
+                        minlength="4"
+                        class="border-3-transparent border-none outline-none bg-light sm-width-max p-10 radius-5 ircf-font font-size-1 text-right hand"
+                        style="box-shadow: 0 0px 7px 5px inset var(--text-light)"
+                        placeholder="" />
+                        <ul class="shadow-xs border-3-transparent border-none outline-none bg-light sm-width-max p-10 radius-5 ircf-font font-size-1 text-right hand dashboard-city-dropdown"
+                        id="get_city_value">
+                          <li class="p-15 ircf-font box-hover-effect-1 hand radius-50 transition-0-5 d-flex justify-between align-items-center">
+                            مذکر
+                            <img src="../assets/contents/sgv_icon-pack-b487xbn238xc/male.svg" alt="" class="img-30 radius-50" />
+                          </li>
+                          <li class="p-15 ircf-font box-hover-effect-1 hand radius-50 transition-0-5 d-flex justify-between align-items-center">
+                            مونث
+                            <img src="../assets/contents/sgv_icon-pack-b487xbn238xc/female.svg" alt="" class="img-30 radius-50" />
+                          </li>
+                        </ul>
                     </section>
-                    <div class="pad-10"></div>
+                    <div class="pad-15"></div>
                     <section class="m-auto">
-                        <p class="ircf-font ircf-font-bold font-size-0 text-dark text-center">درباره خودتان کمی توضیح دهید</p>
+                        <p class="ircf-font ircf-font-bold font-size-0 text-dark text-right mr-30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;درباره خودتان کمی توضیح دهید</p>
                         <div class="m-auto text-center">
-                            <textarea dir="rtl" rows="15" minlength="15" maxlength="150" class="border-3-transparent border-none resize-none m-auto d-flex outline-none bg-light p-10 mb-20 radius-5 shadow-xs ircf-font font-size-1" id="user_profile_descriptions_input" placeholder="در این قسمت می توانید کمی درباره خودتان بنویسید.." style="width: 85%;max-width: 85%;"></textarea>
+                            <textarea dir="rtl" minlength="15" maxlength="150" class="border-3-transparent bg-light border-none resize-none m-auto d-flex outline-none p-15 mb-20 radius-10 ircf-font font-size-1" id="user_profile_descriptions_input" placeholder="در این قسمت می توانید کمی درباره خودتان بنویسید.." style="width: 85%;max-width: 85%; height: 400px;"></textarea>
                         </div>
-                        <div class="text-center">
-                            <button type="button" class="outline-none border-none font-size-1 radius-5 shadow-xs p-10 ircf-font mb-20 bg-redly text-white shadow-sm-redly bg-hover-o-purple transition-1 hand">
-                                &nbsp;ثبت تغییرات&nbsp;
-                            </button>
-                        </div>
+                        <button type="button" class="d-flex align-items-center float-left ml-50 outline-none border-none font-size-1 radius-50 p-10 ircf-font mb-20 bg-greenly shadow-xs text-white bg-hover-o-purple transition-1 hand">
+                            &nbsp;
+                            <i class="fa fa-save ml-5 mr-2"></i>
+                            ثبت اطلاعات
+                            &nbsp;
+                        </button>
+                        <button type="button" class="d-flex align-items-center float-left ml-14 outline-none border-none font-size-1 radius-50 p-10 ircf-font mb-20 bg-redly shadow-xs text-white bg-hover-o-purple transition-1 hand">
+                            &nbsp;
+                            <i class="fa fa-trash ml-5 mr-2"></i>
+                            حذف نوشته ها
+                            &nbsp;
+                        </button>
                     </section>
                 </form>
             </article>
@@ -227,11 +258,26 @@
     <script src="../assets/js/jquery-3.6-0.js"></script>
     <script>
         DashboardRouteState();
-        $("#show_city_search_box_dh37g37").click(function() {
-            $("#search_and_find_city").removeClass("d-none");
+
+        document.getElementById("set_gender_value").addEventListener("input",function(){
+          document.getElementById("set_gender_value").value = "";
         });
-        $("#close_search_and_find_city_h48h239").click(function() {
-            $("#search_and_find_city").addClass("d-none");
+
+        document.getElementById("user_profile_descriptions_input").addEventListener("input",function(){
+
+        });
+        $("#set_gender_value").click(function(){
+          $("#get_gender_value").removeClass("d-none");
+        })
+
+        $("#get_gender_value li").click(function(){
+          $("#set_gender_value").val(this.innerText);
+          $("#get_gender_value").addClass("d-none");
+        });
+
+        $("#get_city_value li").click(function(){
+          $("#set_city_value").val(this.innerText);
+          $("#set_city_value").addClass("d-none");
         });
     </script>
 </body>
