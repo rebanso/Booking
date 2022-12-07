@@ -3,5 +3,7 @@
     "editor.formatOnSave": false,
     "diffEditor.codeLens": true,
     "editor.minimap.side": "right",
-    "svn.ignoreMissingSvnWarning": true
+    "svn.ignoreMissingSvnWarning": true,
+    "nuxt.isNuxtApp": false,
+    "editor.tabCompletion": "on"
 }

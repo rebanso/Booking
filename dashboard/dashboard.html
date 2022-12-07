@@ -190,13 +190,13 @@
                         id="set_gender_value"
                         style="box-shadow: 0 0px 7px 5px inset var(--text-light)"
                         placeholder="مثال: مونث" />
-                        <ul class="d-none shadow-xs border-3-transparent border-none outline-none bg-light sm-width-max p-10 radius-5 ircf-font font-size-1 text-right hand dashboard-gender-dropdown"
+                        <ul class="d-none shadow-xs border-3-transparent border-none outline-none bg-light sm-width-max p-10 radius-10 ircf-font font-size-1 text-right hand dashboard-gender-dropdown"
                         id="get_gender_value">
-                          <li class="p-15 ircf-font box-hover-effect-1 hand radius-50 transition-0-5 d-flex justify-between align-items-center">
+                          <li class="p-15 ircf-font box-hover-effect-1 hand radius-10 transition-0-5 d-flex justify-between align-items-center">
                             مذکر
                             <img src="../assets/contents/sgv_icon-pack-b487xbn238xc/male.svg" alt="" class="img-30 radius-50" />
                           </li>
-                          <li class="p-15 ircf-font box-hover-effect-1 hand radius-50 transition-0-5 d-flex justify-between align-items-center">
+                          <li class="p-15 ircf-font box-hover-effect-1 hand radius-10 transition-0-5 d-flex justify-between align-items-center">
                             مونث
                             <img src="../assets/contents/sgv_icon-pack-b487xbn238xc/female.svg" alt="" class="img-30 radius-50" />
                           </li>
@@ -207,7 +207,7 @@
                         <p class="ircf-font ircf-font-bold font-size-0 text-dark">نام شهر خود را وارد کنید</p>
                         <p class="ircf-font ircf-font-bold font-size-0 text-dark">جنسیت خود را مشخص کنید</p>
                     </section>
-                    <section class="d-flex justify-around relative">
+                    <section class="d-flex justify-around">
                         <input
                         type="text"
                         class="border-3-transparent border-none outline-none bg-light sm-width-max p-10 radius-5 ircf-font font-size-1"
@@ -219,16 +219,26 @@
                         class="border-3-transparent border-none outline-none bg-light sm-width-max p-10 radius-5 ircf-font font-size-1 text-right hand"
                         style="box-shadow: 0 0px 7px 5px inset var(--text-light)"
                         placeholder="" />
-                        <ul class="shadow-xs border-3-transparent border-none outline-none bg-light sm-width-max p-10 radius-5 ircf-font font-size-1 text-right hand dashboard-city-dropdown"
+                        <ul class="d-none shadow-xs border-3-transparent border-none outline-none bg-light sm-width-max p-10 radius-10 ircf-font font-size-1 text-right hand dashboard-city-dropdown"
                         id="get_city_value">
-                          <li class="p-15 ircf-font box-hover-effect-1 hand radius-50 transition-0-5 d-flex justify-between align-items-center">
-                            مذکر
-                            <img src="../assets/contents/sgv_icon-pack-b487xbn238xc/male.svg" alt="" class="img-30 radius-50" />
-                          </li>
-                          <li class="p-15 ircf-font box-hover-effect-1 hand radius-50 transition-0-5 d-flex justify-between align-items-center">
-                            مونث
-                            <img src="../assets/contents/sgv_icon-pack-b487xbn238xc/female.svg" alt="" class="img-30 radius-50" />
-                          </li>
+                            <div class="text-center">
+                                <input type="text" class="border-3-transparent border-none outline-none border- max-width-auto p-10 radius-5 ircf-font font-size-1" />
+                            </div>
+                            <li class="p-15 ircf-font box-hover-effect-1 hand radius-10 transition-0-5 d-flex justify-between align-items-center">
+                                اصفهان
+                            </li>
+                            <li class="p-15 ircf-font box-hover-effect-1 hand radius-10 transition-0-5 d-flex justify-between align-items-center">
+                                رامسر
+                            </li>
+                            <li class="p-15 ircf-font box-hover-effect-1 hand radius-10 transition-0-5 d-flex justify-between align-items-center">
+                                تهران
+                            </li>
+                            <li class="p-15 ircf-font box-hover-effect-1 hand radius-10 transition-0-5 d-flex justify-between align-items-center">
+                                شیراز
+                            </li>
+                            <li class="p-15 ircf-font box-hover-effect-1 hand radius-10 transition-0-5 d-flex justify-between align-items-center">
+                                مشهد
+                            </li>
                         </ul>
                     </section>
                     <div class="pad-15"></div>
@@ -263,22 +273,27 @@
           document.getElementById("set_gender_value").value = "";
         });
 
-        document.getElementById("user_profile_descriptions_input").addEventListener("input",function(){
 
-        });
         $("#set_gender_value").click(function(){
-          $("#get_gender_value").removeClass("d-none");
-        })
+            $("#get_gender_value").removeClass("d-none");
+            $("#get_city_value").addClass("d-none");
+        });
 
         $("#get_gender_value li").click(function(){
           $("#set_gender_value").val(this.innerText);
           $("#get_gender_value").addClass("d-none");
         });
 
+        $("#set_city_value").click(function(){
+            $("#get_city_value").removeClass("d-none");
+            $("#get_gender_value").addClass("d-none");
+        });
+
         $("#get_city_value li").click(function(){
           $("#set_city_value").val(this.innerText);
-          $("#set_city_value").addClass("d-none");
+          $("#get_city_value").addClass("d-none");
         });
+
     </script>
 </body>
 
