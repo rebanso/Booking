@@ -172,16 +172,104 @@
                 <p class="ircf-font font-size text-lightly ircf-font-bold mt-50 text-center mb-3">ساخته شده با <span
                         class="text-redly">❤</span> در ایران زیبا :)</p>
             </article>
-            <article class="mid-width-fixed bg-white radius-5 shadow-xs mb-20 height-auto">
-                <div class="mt-50 mb-50 text-center ircf-font font-size-4 ircf-font-bold">
-                    <p class="text-dark">جهت ارتباط با ما، یکی از راه های ارتباطی زیر را انتخاب کنید!</p>
-                </div>
-                <div class="d-block text-center">
-                    <img src="../assets/contents/F48B37dvb63vs7863v/undraw_contact_us_re_4qqt.svg" alt="..." class="max-width-auto" />
-                </div>
-                <form class="text-center m-30-auto">
-                    <textarea name="" id="" cols="0" rows="15" placeholder="کمی درباره آن توضیح دهید.." class="resize-none p-10 radius-5 ircf-font ircf-font-bold border-none bg-light outline-none max-width-auto"></textarea>
-                    <input type="submit" id="send_problem_datatext_3982837" class="auto-width transition-1-ease-in d-flex p-10 mt-15 m-auto hand radius-5 bg-redly shadow-sm-redly text-white border-none outline-none ircf-font font-size-2 ircf-font-bold text-center" minlength="10" maxlength="120" required="required" value="ثبت تغییرات" name="send_problem_data"/>
+            <article class="mid-width-fixed bg-white radius-5 shadow-xs mb-20 height-auto relative">
+                <form action="" method="post" enctype="multipart/form-data">
+                    <div class="d-flex justify-around mt-20">
+                        <p class="ircf-font ircf-font-bold font-size-0
+                                text-dark text-right mr-30">
+                            نام خود را وارد کنید
+                        </p>
+                        <p class="ircf-font ircf-font-bold font-size-0
+                                text-dark text-right mr-30">
+                            نام خانوادگی خود را وارد کنید
+                        </p>
+                    </div>
+                    <section class="d-flex justify-around">
+                        <input maxlength="33" minlength="2" type="text" class="border-3-transparent border-none
+                                outline-none bg-light sm-width-max p-10 radius-5
+                                ircf-font font-size-1" placeholder="مثال: حامد" />
+                        <input type="text" maxlength="33" minlength="2" class="border-3-transparent border-none
+                                outline-none bg-light sm-width-max p-10 radius-5
+                                ircf-font font-size-1 text-right" style="box-shadow: 0 0px
+                                7px 5px inset var(--text-light)" placeholder="مثال: عشورنژاد" />
+                    </section>
+                    <div class="pad-15"></div>
+                    <div class="d-flex justify-around">
+                        <p class="ircf-font ircf-font-bold font-size-0
+                                text-dark text-right mr-30">
+                            یک گزینه را از لیست زیر انتخاب کنید
+                        </p>
+                    </div>
+                    <section class="text-center">
+                        <input type="text" maxlength="0" class="border-3-transparent border-none
+                                outline-none bg-light p-10 radius-5
+                                ircf-font font-size-1 text-right hand" style="box-shadow: 0 0px
+                                7px 5px inset var(--text-light); width: 86%;" id="problem_lists" placeholder="یک گزینه را انتخاب کنید!" />
+                        <ul class="d-none shadow-xs border-3-transparent
+                                border-none outline-none bg-light mid-width
+                                p-10 radius-10 ircf-font font-size-1 text-right
+                                hand dashboard-city-dropdown mt-6" id="problem_items">
+                            <li class="p-15 ircf-font box-hover-effect-1
+                                    hand radius-10 transition-0-5 d-flex
+                                    justify-between align-items-center">
+                                عنوان اول
+                            </li>
+                            <li class="p-15 ircf-font box-hover-effect-1
+                                    hand radius-10 transition-0-5 d-flex
+                                    justify-between align-items-center">
+                                عنوان دوم
+                            </li>
+                            <li class="p-15 ircf-font box-hover-effect-1
+                                    hand radius-10 transition-0-5 d-flex
+                                    justify-between align-items-center">
+                                عنوان سوم
+                            </li>
+                            <li class="p-15 ircf-font box-hover-effect-1
+                                    hand radius-10 transition-0-5 d-flex
+                                    justify-between align-items-center">
+                                عنوام چهارم
+                            </li>
+                            <li class="p-15 ircf-font box-hover-effect-1
+                                    hand radius-10 transition-0-5 d-flex
+                                    justify-between align-items-center mb-20">
+                                عنوان پنجم
+                            </li>
+                        <img src="../assets/contents/sgv_icon-pack-b487xbn238xc/close.svg" alt="..." class="img-27 absolute p-10 bg-lightly transition-05-ease-in box-hover-effect-3 radius-50 mt-012" style="right: 50%; transform:translate(50%,0);" id="close_dropdown_menu_box" />
+                        </ul>
+                    </section>
+                    <div class="pad-10"></div>
+                    <div class="d-flex justify-around mt-0">
+                        <p class="ircf-font ircf-font-bold font-size-0
+                                text-dark text-right mr-30">
+                            کمی درباره آن مشکلات توضیح دهید
+                        </p>
+                    </div>
+                    <section>
+                        <textarea dir="rtl" minlength="15" maxlength="150" class="border-3-transparent bg-light
+                            border-none resize-none m-auto d-flex
+                            outline-none p-13 mb-20 radius-10 ircf-font
+                            font-size-1 " id="user_problem_descriptions_input" placeholder="کمی درباره مشکلات در این قسمت بنویسید.." style="width: 85%;max-width: 85%; height:500px;"></textarea>
+                        <button type="button " class="d-flex align-items-center float-left
+                                ml-50 outline-none border-none font-size-1
+                                radius-50 p-10 ircf-font mb-20 bg-greenly
+                                shadow-xs text-white bg-hover-o-purple
+                                transition-1 hand">
+                                &nbsp;
+                                <i class="fa fa-save ml-5 mr-2 "></i>
+                                تأیید و ثبت اطلاعات
+                                &nbsp;
+                            </button>
+                        <button type="button" class="d-flex align-items-center float-left
+                                ml-14 outline-none border-none font-size-1
+                                radius-50 p-10 ircf-font mb-20 bg-redly
+                                shadow-xs text-white bg-hover-o-purple
+                                transition-1 hand" id="clear_user_problem_descriptions_input">
+                                &nbsp;
+                                <i class="fa fa-trash ml-5 mr-2 "></i>
+                                حذف نوشته ها
+                                &nbsp;
+                            </button>
+                    </section>
                 </form>
             </article>
         </main>
@@ -190,39 +278,19 @@
     <script src="../assets/js/jquery-3.6-0.js"></script>
     <script>
         DashboardRouteState();
-        $("#report_container_selection").click(function() {
-            $("#select_report_information_item").removeClass("d-none");
-            $("#select_report_information_item ul li").click(function() {
-                document.getElementById("report_container_selection_title").value = this.innerText.trim();
-                $("#select_report_information_item").addClass("d-none");
-                $("#report_information").removeClass("d-none");
-                $("#save_report_information").removeClass("d-none");
-                document.getElementById("report_information").disabled = false;
-
-            });
+        $("#problem_lists").click(function(){
+            $("#problem_items").removeClass("d-none");
         });
-        $("#save_report_information").click(function() {
-            if ($("#report_container_selection_title").val() == "گزارش عدم تطابق اقامتگاه" || $("#report_container_selection_title").val() == "انتقادات و یا پیشنهادات" || $("#report_container_selection_title").val() == "رفع حفره امنیتی" || $("#report_container_selection_title").val() == "موارد دیگر") {
-                if ($("#report_information").val().trim().length > 55) {
-                    this.type = "submit";
-                    $("#error_report_information").fadeOut("fast").addClass("d-none");
-                } else {
-                    $("#error_report_information").fadeIn("fast").removeClass("d-none");
-                    $("#report_information").css("border", "3px dashed #F20028");
-                    let ris = setTimeout(() => {
-                        $("#report_information").css("border", "3px dashed transparent");
-                        clearTimeout(ris);
-                    }, 1000);
-                    this.type = "button";
-                }
-            } else {
-                $("#report_container_selection_title").css("border", "3px dashed #F20028");
-                let rcstt = setTimeout(() => {
-                    $("#report_container_selection_title").css("border", "3px dashed transparent");
-                    clearTimeout(rcstt);
-                }, 1000);
-            }
-        })
+        $("#problem_items li").click(function() {
+            $("#problem_lists").val(this.innerText);
+            $("#problem_items").addClass("d-none");
+        });
+        $("#close_dropdown_menu_box").click(function(){
+            $("#problem_items").addClass("d-none");
+        });
+        $("#clear_user_problem_descriptions_input").click(function(){
+            $("#user_problem_descriptions_input").val("");
+        });
     </script>
 
 </body>

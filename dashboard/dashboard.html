@@ -273,14 +273,14 @@
                         <input type="text" class="border-3-transparent border-none
                                 outline-none bg-light sm-width-max p-10 radius-5
                                 ircf-font font-size-1" placeholder="مثال: مهسا امینی">
-                        <input type="text" maxlength="4" minlength="4" class="border-3-transparent border-none
+                        <input type="text" maxlength="0" class="border-3-transparent border-none
                                 outline-none bg-light sm-width-max p-10 radius-5
                                 ircf-font font-size-1 text-right hand" id="set_gender_value" style="box-shadow: 0 0px
                                 7px 5px inset var(--text-light)" placeholder="مثال: مونث">
                         <ul class="d-none shadow-xs border-3-transparent
                                 border-none outline-none bg-light sm-width-max
                                 p-10 radius-10 ircf-font font-size-1 text-right
-                                hand dashboard-gender-dropdown" id="get_gender_value">
+                                hand dashboard-gender-dropdown" style="margin-top: 56px;" id="get_gender_value">
                             <li class="p-15 ircf-font box-hover-effect-1
                                     hand radius-10 transition-0-5 d-flex
                                     justify-between align-items-center">
@@ -301,20 +301,20 @@
                         <p class="ircf-font ircf-font-bold font-size-0
                                 text-dark">نام شهر خود را وارد کنید</p>
                         <p class="ircf-font ircf-font-bold font-size-0
-                                text-dark">جنسیت خود را مشخص کنید</p>
+                                text-dark">شماره تماس خود را وارد کنید</p>
                     </section>
                     <section class="d-flex justify-around">
-                        <input type="text" class="border-3-transparent border-none
+                        <input type="text" maxlength="0" class="border-3-transparent border-none
                                 outline-none bg-light sm-width-max p-10 radius-5
                                 ircf-font font-size-1" placeholder="مثال: سقز" id="set_city_value">
-                        <input type="text" maxlength="4" minlength="4" class="border-3-transparent border-none
+                        <input type="number" min="09" max="0999999999" class="border-3-transparent border-none
                                 outline-none bg-light sm-width-max p-10 radius-5
-                                ircf-font font-size-1 text-right hand" style="box-shadow: 0 0px 7px 5px inset
-                                var(--text-light)" placeholder="">
+                                ircf-font font-size-1 text-left hand" style="box-shadow: 0 0px 7px 5px inset
+                                var(--text-light)" dir="ltr" pattern="^[0-9]*$" placeholder="0911 234 5678">
                         <ul class="d-none shadow-xs border-3-transparent
                                 border-none outline-none bg-light sm-width-max
                                 p-10 radius-10 ircf-font font-size-1 text-right
-                                hand dashboard-city-dropdown" id="get_city_value">
+                                hand dashboard-city-dropdown" style="margin-top: 56px;" id="get_city_value">
                             <div class="text-center mb-10">
                                 <input type="text" placeholder="در کدام شهر زندگی می کنید؟" class="border-3-transparent border-none
                                         outline-none p-10 radius-5 ircf-font
@@ -359,18 +359,17 @@
                             <img src="../assets/contents/sgv_icon-pack-b487xbn238xc/close.svg" alt="..." class="img-27 absolute p-10 bg-lightly transition-05-ease-in box-hover-effect-3 radius-50 mt-012" style="right: 50%; transform:translate(50%,0);" id="close_get_city_value" />
                         </ul>
                     </section>
-                    <div class="pad-15 "></div>
-                    <section class="m-auto ">
+                    <div class="pad-15"></div>
+                    <section class="m-auto">
                         <p class="ircf-font ircf-font-bold font-size-0
-                                text-dark text-right mr-30 ">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;درباره خودتان کمی توضیح دهید
+                                text-dark text-right mr-50 ">
+                        &nbsp;&nbsp;درباره خودتان کمی توضیح دهید
                         </p>
                         <div class="m-auto text-center ">
                             <textarea dir="rtl " minlength="15 " maxlength="150 " class="border-3-transparent bg-light
                                     border-none resize-none m-auto d-flex
                                     outline-none p-15 mb-20 radius-10 ircf-font
-                                    font-size-1 " id="user_profile_descriptions_input
-                                    " placeholder="در این قسمت می توانید کمی درباره خودتان بنویسید.. " style="width: 85%;max-width: 85%; height:400px; "></textarea>
+                                    font-size-1 " id="user_profile_descriptions_input" placeholder="در این قسمت می توانید کمی درباره خودتان بنویسید.. " style="width: 85%;max-width: 85%; height:500px;"></textarea>
                         </div>
                         <button type="button " class="d-flex align-items-center float-left
                                 ml-50 outline-none border-none font-size-1
@@ -386,7 +385,7 @@
                                 ml-14 outline-none border-none font-size-1
                                 radius-50 p-10 ircf-font mb-20 bg-redly
                                 shadow-xs text-white bg-hover-o-purple
-                                transition-1 hand ">
+                                transition-1 hand" id="clear_user_profile_descriptions_input">
                                 &nbsp;
                                 <i class="fa fa-trash ml-5 mr-2 "></i>
                                 حذف نوشته ها
@@ -430,6 +429,10 @@
         $("#close_get_city_value").click(function() {
             $("#get_city_value").addClass("d-none");
         });
+
+        $("#clear_user_profile_descriptions_input").click(function(){
+            $("#user_profile_descriptions_input").val("")
+        })
     </script>
 </body>
 
