@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /manager
+Disallow: /search
+Allow: /register
+Allow: /contact
+Allow: /login
+Allow: /ads
