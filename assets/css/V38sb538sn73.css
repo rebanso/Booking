@@ -796,104 +796,6 @@
         align-items: flex-start;
     }
 
-    body[id="favourite"]>section>div>div>div>header[class="post-box"]:nth-child(3) {
-        width: 35%;
-        max-width: 35%;
-        height: auto;
-        max-height: auto;
-    }
-
-    body[id="favourite"]>section>div>div>div>header[class="post-box"]:nth-child(4) {
-        width: 55%;
-        max-width: 55%;
-        height: auto;
-        max-height: auto;
-    }
-
-    body[id="favourite"]>section>div>div>div>header[class="post-box"]:nth-child(5) {
-        width: 55%;
-        max-width: 55%;
-        height: auto;
-        max-height: auto;
-    }
-
-    body[id="favourite"]>section>div>div>div>header[class="post-box"]:nth-child(6) {
-        width: 35%;
-        max-width: 35%;
-        height: auto;
-        max-height: auto;
-    }
-
-    body[id="favourite"]>section>div>div>div>header[class="post-box"]:nth-child(7) {
-        width: 55%;
-        max-width: 55%;
-        height: auto;
-        max-height: auto;
-    }
-
-    body[id="favourite"]>section>div>div>div>header[class="post-box"]:nth-child(8) {
-        width: 35%;
-        max-width: 35%;
-        height: auto;
-        max-height: auto;
-    }
-
-    body[id="favourite"]>section>div>div>div>header[class="post-box"]:nth-child(9) {
-        width: 55%;
-        max-width: 55%;
-        height: auto;
-        max-height: auto;
-    }
-
-    body[id="favourite"]>section>div>div>div>header[class="post-box"]:nth-child(10) {
-        width: 35%;
-        max-width: 35%;
-        height: auto;
-        max-height: auto;
-    }
-
-    body[id="favourite"]>section>div>div>div>header[class="post-box"]:nth-child(11) {
-        width: 35%;
-        max-width: 35%;
-        height: auto;
-        max-height: auto;
-    }
-
-    body[id="favourite"]>section>div>div>div>header[class="post-box"]:nth-child(12) {
-        width: 55%;
-        max-width: 55%;
-        height: auto;
-        max-height: auto;
-    }
-
-    body[id="favourite"]>section>div>div>div>header[class="post-box"]:nth-child(13) {
-        width: 55%;
-        max-width: 55%;
-        height: auto;
-        max-height: auto;
-    }
-
-    body[id="favourite"]>section>div>div>div>header[class="post-box"]:nth-child(14) {
-        width: 35%;
-        max-width: 35%;
-        height: auto;
-        max-height: auto;
-    }
-
-    body[id="favourite"]>section>div>div>div>header[class="post-box"]:nth-child(15) {
-        width: 35%;
-        max-width: 35%;
-        height: auto;
-        max-height: auto;
-    }
-
-    body[id="favourite"]>section>div>div>div>header[class="post-box"]:nth-child(16) {
-        width: 55%;
-        max-width: 55%;
-        height: auto;
-        max-height: auto;
-    }
-
     body>section>header>div[class="mpc m-auto p-20"]>ul>li>i {
         font-size: 30px;
         margin-top: 2px;
@@ -979,17 +881,6 @@
         margin-top: -0px;
     }
 
-    body[id="favourite"] div[id="show_favourite_items"] {
-        height: 960px;
-        overflow-y: auto;
-    }
-
-    body[id="edit_hotels"] article[id="edit_hotels_jh438x8378"] {
-        height: 960px;
-        overflow-y: auto;
-        scroll-behavior: smooth;
-    }
-
     div[id="select_report_information_item"]>ul>li:first-child {
         border-radius: 5px 5px 0 0;
     }
@@ -1010,55 +901,13 @@
         cursor: pointer;
     }
 
-    ul[id="all_list_filter_categories"] {
-        left: 30px;
-        top: 50px;
-        padding: 8px;
-        box-shadow: 0 2px 5px 0 rgba(113, 113, 113, 0.266);
-    }
-
-    ul[id="all_list_filter_categories"]>li {
-        padding: 10px;
-    }
-
-    ul[id="all_list_filter_categories"]>li:hover {
-        transition: 0.1s;
-        background-color: var(--text-light);
-        cursor: pointer;
-        border-radius: 5px 5px 5px 5px;
-        font-weight: bold;
-        color: #2c2f30;
-    }
-
-    form[id="show_favourite_hotel_list_items"] {
-        right: 28px;
-        top: 55px;
-        border: 5px solid rgba(60, 60, 60, 0.3);
-    }
-
-    input[id="get_favourite_hotel_link_pusher"]:placeholder-shown {
-        text-align: right;
-    }
-
-    p[class="house-code-on-image-box"] {
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        top: 50%;
-        font-family: 'IRCF';
-        transform: rotate(-40deg);
-        font-size: 20px;
-        font-weight: bold;
-        width: 100%;
-        border-radius: 5px 5px 5px 5px;
-        color: var(--text-dark);
-        opacity: 0.5;
-        transition: all 0.3s ease-in;
-    }
-
     .show-hotel-information-top-to-header {
         border-radius: 4px 4px 0 0;
+    }
+
+    #edit_hotels_jh438x8378{
+        overflow-y: scroll;
+        height: 957px;
     }
 
     .hotel-information-shadow-effect-dj48x73h {
@@ -1074,10 +923,15 @@
         margin-bottom: 50px;
     }
 
+    .dj48x73h-edit-title{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
     .downer-animation-43897487dgh {
         animation: fadeInDown 2.7s infinite;
     }
-
     .hide-msg-tooltip::after {
         display: inherit;
         position: absolute;
