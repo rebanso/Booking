@@ -154,28 +154,26 @@
                 </ul>
                 <p class="ircf-font font-size text-lightly ircf-font-bold mt-50 text-center mb-3">ساخته شده با <span class="text-redly">❤</span> در ایران زیبا :)</p>
             </article>
-            <article class="mid-width-fixed bg-white radius-5 shadow-xs mb-20 height-auto">
-                <div class="max-width bg-white m-auto">
-                    <p class="text-right ircf-font mr-20 mt-10 p-20 font-size-4 ircf-font-bold text-purply">.:: فعال کردن رمز دومرحله ای ::.</p>
-                </div>
-                <div class="d-flex">
-                    <img src="../assets/contents/F48B37dvb63vs7863v/undraw_two_factor_authentication_namy.svg" alt="..." class="max-width-auto m-auto">
+            <article class="mid-width-fixed bg-white radius-5 shadow-xs mb-20 height-auto relative">
+                <div class="absolute top-50 left-50 max-width" style="transform: translate(-50%,-50%);">
+                    <div class="d-flex">
+                    <img src="../assets/contents/F48B37dvb63vs7863v/undraw_two_factor_authentication_namy.svg" alt="..." class="set-fadeIn-name set-duration-1 set-iteration-1 max-width-auto m-auto">
                 </div>
                 <form action="set_two_verfitication_passwordnxc873ncx73.php" method="post" enctype="multipart/form-data" id="authorization_form" class="text-center mt-30">
                     <div class="relative mt-50">
                         <label class="d-flex align-center ircf-font ircf-font-bold mb-10" for="authorization_part_one_title">رمز دو مرحله ای خود را وارد کنید</label>
                         <input type="text" id="authorization_part_one"
-                            class="border-none outline-none bg-light mid-width-fixed p-20 radius-5 shadow-xs ircf-font font-size-1"
+                            class="border-none outline-none bg-light mid-width-fixed p-20 radius-5 ircf-font font-size-1 set-zoomIn-animation-name set-duration-1 set-iteration-1"
                             maxlength="18" minlength="4" onkeypress="return OnlyEnglishCharacter(event);" placeholder="مثال: نام بهترین دوستتان چیست؟" />
                         <label class="d-flex mt-20 align-center ircf-font ircf-font-bold mb-10" for="authorization_part_one_title">رمز دو
                             مرحله ای خود را مجدداً وارد کنید</label>
                         <input type="text" id="authorization_part_two"
-                            class="border-none outline-none bg-light mid-width-fixed p-20 radius-5 shadow-xs ircf-font font-size-1"
+                            class="border-none outline-none bg-light mid-width-fixed p-20 radius-5 ircf-font font-size-1 set-zoomIn-animation-name set-duration-2 set-iteration-1"
                             maxlength="18" minlength="4" onkeypress="return OnlyEnglishCharacter(event);" placeholder="مثال: نام بهترین دوستتان چیست؟" />
                     </div>
                     <div class="relative mt-20">
-                        <button type="button" value="تأیید و بررسی رمز دومرحله ای" id="check_authorization_input1" class="outline-none border-none font-size-1 radius-50 bg-hover-o-purple transition-05-ease-in shadow-xs p-15 ircf-font-bold ircf-font bg-redly text-white hand">
-                            تأیید و بررسی رمز دومرحله ای
+                        <button type="button" value="تأیید و بررسی رمز دومرحله ای" id="check_authorization_input1" class="set-zoomIn-animation-name set-duration-3 set-iteration-1 outline-none border-none font-size-1 radius-5 bg-hover-o-purple transition-05-ease-in shadow-sm p-15 ircf-font-bold ircf-font bg-redly-animate text-white hand">
+                            ایجاد رمزعبور دو مرحله&zwnj;ای
                         </button>
                     </div>
                     <div class="relative m-auto mt-20 d-none" id="confirm_authorization_code_enable">
@@ -184,6 +182,7 @@
                         </button>
                     </div>
                 </form>
+                </div>
             </article>
         </main>
     </section>
