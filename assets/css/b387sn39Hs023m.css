@@ -1126,10 +1126,15 @@ i[class="fa fa-search bg-transparent font-size-4 hand mt-12"] {
 .top-0{
     top: 0;
 }
+.top-50{
+    top: 50%;
+}
 .left-0 {
     left: 0;
 }
-
+.left-50{
+    left: 50%;
+}
 .left-0-30 {
     left: -30px;
 }
